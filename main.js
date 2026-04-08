@@ -1,3 +1,5 @@
+// function to classify the KWH input of the user
+
 function classifyKWH(){
 
     let userKWH = document.getElementById("inputKWH").value;
@@ -11,7 +13,7 @@ function classifyKWH(){
     } else if (userKWH >= 301 && userKWH <= 500){
         window.alert("High Consumption : Higher Electricty Usage")
     } else if (userKWH < 0){
-        window.alert("Please enter a non-negative number.")
+        window.alert("Please enter a non-negative number.") // for when the user inputs wrong negative numbers
     } else {
         window.alert("Very High Consumption : Heavy Electricity Users")
     }
